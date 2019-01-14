@@ -63,7 +63,7 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{ marginBottom: "3%" }}>
         <div className="page-header">
           <h1>Employee Review Counts</h1>
         </div>
@@ -81,6 +81,10 @@ class App extends Component {
         >
           Display Company Employees
         </button>
+        <br />
+        <h3 className="col-4 form-control">
+          {this.state.bID ? `Company Id: ${this.state.bID}` : null}
+        </h3>
         <br />
         <div style={{ textAlign: "left", marginLeft: "3%" }}>
           {this.state.employees.length > 0 ? this.renderEmployeeList() : null}
