@@ -49,13 +49,16 @@ class Names extends React.Component {
               }
         }
       >
-        <div className="col-2">
+        <div className="col-md-2 col-sm-12">
+          <label htmlFor=""> </label>
           <p>{this.props.name}</p>
         </div>
-        <div className="col-2">
+        <div className="col-md-2 col-sm-12">
+          <label htmlFor="" />
           <p>{this.props.id}</p>
         </div>
-        <div className="col-2">
+        <div className="col-md-2 col-sm-12">
+          <label htmlFor="">Review Count</label>
           <input
             type="number"
             className="form-control"
@@ -64,7 +67,8 @@ class Names extends React.Component {
             onChange={e => this.setState({ reviewCount: e.target.value })}
           />
         </div>
-        <div className="col-2">
+        <div className="col-md-2 col-sm-12">
+          <label htmlFor="">Review Invites</label>
           <input
             type="number"
             placeholder="Review Invites"
@@ -73,7 +77,7 @@ class Names extends React.Component {
             onChange={e => this.setState({ reviewInvites: e.target.value })}
           />
         </div>
-        <div className="col-2 ">
+        <div className="col-md-2 col-sm-12 ">
           <button
             onClick={this.saveReviews}
             className={
