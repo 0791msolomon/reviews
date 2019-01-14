@@ -50,7 +50,13 @@ class App extends Component {
     return employees[0].map(item => {
       return (
         <div key={item.id} style={{ marginTop: "3%" }}>
-          <Names id={item.id} name={item.name} companyId={this.state.bID} />
+          <Names
+            id={item.id}
+            name={item.name}
+            companyId={this.state.bID}
+            reviewCounts={item.reviewCounts}
+            reviewInvites={item.reviewInvites}
+          />
         </div>
       );
     });

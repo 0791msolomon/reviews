@@ -6,8 +6,8 @@ class Names extends React.Component {
     super(props);
     this.state = {
       id: this.props.id,
-      reviewCount: 0,
-      reviewInvites: 0,
+      reviewCount: this.props.reviewCounts,
+      reviewInvites: this.props.reviewInvites,
       reviewsSaved: false
     };
   }
